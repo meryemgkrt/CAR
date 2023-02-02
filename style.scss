@@ -103,7 +103,7 @@ header {
     flex-direction: column;
     max-width: 500px;
     align-items: center;
-    gap: 70px;
+    gap: 700px;
 
     @include tablet {
         gap: 50px;
@@ -159,12 +159,20 @@ header {
     flex-direction: column;
     gap: 50px;
     align-items: center;
+    
 
     &-main {
         max-width: 900px;
+      transition: all 0.3s;
+
+
 
         @include mobile {
             max-width: 500px;
+        }
+        &:hover{
+            transform: translate(-200px, 50px);
+            @extend .hover;
         }
     }
 
